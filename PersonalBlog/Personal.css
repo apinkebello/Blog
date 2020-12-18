@@ -1,0 +1,231 @@
+body{
+    background-color: darkgray;
+}
+.container{
+    /* set display to grid*/
+    display: grid;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    /* set up rows and columns*/
+    /* grid-template-columns: 200px 200px 200px; */
+    grid-template-rows: 80px 700px 80px;
+    grid-template-areas: 
+    "hd hd hd"
+    "main main main"
+    "ft ft ft ";
+    border: 3px solid red;
+}
+.box{
+    width: 100%;
+    height: 100%;
+    
+}
+.header{
+    grid-area: hd;
+    background-color: darkgreen;
+}
+.navbar{
+    position: relative;
+    background-color: darkkhaki;
+    
+}
+.navbar a{
+    float: right;
+    text-decoration: none;
+    font-size: medium;
+    padding: 10px 10px 0 10px;
+}
+.navbar a:hover{
+    background: #dddddd;
+    color: darkgreen;
+}
+.content{
+    grid-area: main;
+    background-color: darksalmon;
+    border: 3px solid sienna;
+}
+#nestedGrid{
+    display:grid;
+    grid-template-columns: 33% 33% 33%;
+
+}
+.PostBox{
+    /* border: 3px solid black; */
+    /*background: cadetblue;*/
+    border-radius: 2px;
+    /* padding: 20px; */
+    
+}
+.postImage{
+    height: 300px;
+    width: 100%;
+}
+.footer{
+    grid-area: ft;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: skyblue;
+    /* padding: 10px; */
+    /* margin: 20px; */
+    text-align: justify;
+}
+.footer-right{
+    background-color: turquoise;
+    /* margin: 20px; */
+    /* padding: 10px; */
+    flex: 50%;
+}
+.footer-left{
+    background-color: teal;
+    /* margin: 20px; */
+    /* padding: 10px; */
+    flex: 50%;
+}
+#subscribe{
+    float: left;
+    font-size: small;
+}
+.button1{
+    border: none;
+    color: black;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: medium;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.socials{
+    font-size: bold;
+    font-weight: 600;
+    font-style: oblique;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /*float: right;*/
+    margin: 10px 10px;
+    
+}
+.aboutauthor{
+    padding:15px;
+    font-size: medium;
+}
+.name{
+    
+    font-weight: 600;
+    
+}
+.company{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.bio{
+    
+    font-family: monospace;
+}    
+.story{
+    height: 400px;
+    padding: 15px;
+
+}
+.authorImage{
+    width:120px;
+    height:120px;
+    float: right;
+}
+h1{
+    font-weight: 600;
+    font-style: italic;
+    font-family: cursive;
+    text-align: center;
+}
+#BlogName{
+    font-size: medium;
+    font-weight: bold;
+    text-align: justify;
+    padding: 15px;
+}
+.socialIcon{
+    width: 25px;
+    height: 25px;
+}
+
+    @media (max-width:430px) {
+        .container{
+            background-color: tomato;
+        /* set display to grid*/
+            display: grid;
+            width: 100%;
+            height: 100%;
+            margin: auto;
+    /* set up rows and columns*/
+    /* grid-template-columns: 200px 200px 200px; */
+            grid-template-rows: 80px auto 50px;
+            grid-template-areas: 
+             "hd hd hd"
+            "main main main"
+            "ft ft ft ";
+            border: 3px solid red;
+        }
+        #nestedGrid{
+            display:block;
+            /* grid-template-columns: 33% 33% 33%; */
+        }
+        .PostBox{
+            /* border: 3px solid black; */
+            /*background: cadetblue;*/
+            border-radius: 2px;
+            /* padding: 20px; */
+            border-bottom: 1px solid #cccccc;
+        }
+    }
+    @media (max-width:360px){
+        .container{
+            background-color: tomato;
+        /* set display to grid*/
+            display: grid;
+            width: 100%;
+            margin: auto;
+    /* set up rows and columns*/
+    /* grid-template-columns: 200px 200px 200px; */
+            grid-template-rows: 80px auto 50px;
+            grid-template-areas: 
+             "hd hd hd"
+            "main main main"
+            "ft ft ft ";
+            border: 3px solid red;
+        }
+        @media (max-width: 600px){
+            .footer-right, .footer-left{
+                flex:100%
+            }
+        }
+        #nestedGrid{
+            display:block;
+            /* grid-template-columns: 33% 33% 33%; */
+        }
+        .PostBox{
+            /* border: 3px solid black; */
+            /*background: cadetblue;*/
+            border-radius: 2px;
+            padding: 20px;
+            border-bottom: 1px solid #cccccc;
+        }
+
+        .postImage{
+            height: 200px;
+             width: 100%;
+        }
+
+    }
+
+    /* @media(min-width:731px) and (max-width:1100px){
+        .container{
+            background-color: turquoise;
+        } 
+    }*/
+    /* @media(min-width:1101px){
+        .container{
+            background-color: violet;
+        }
+    } */
