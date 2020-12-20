@@ -23,7 +23,6 @@ body{
 .navbar{
     position: relative;
     background-color: darkkhaki;
-    
 }
 .navbar a{
     float: right;
@@ -46,7 +45,6 @@ body{
     background-color: darksalmon;
     border: 3px solid sienna;
 }
-
 .socials{
     font-size: bold;
     font-weight: 600;
@@ -81,14 +79,12 @@ body{
 .story{
     height: 400px;
     padding: 15px;
-
 }
 .authorImage{
     width:120px;
     height:120px;
     float: right;
 }
-
 .footer{
     grid-area: ft;
     display: flex;
@@ -166,7 +162,5 @@ h1{
             flex:100%
         }
     }
-    
-
 }
     
