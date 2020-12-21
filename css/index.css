@@ -1,3 +1,8 @@
+@import "navigation.css";
+@import "footer.css";
+@import "button.css";
+
+
 body{
     background-color: darkgray;
 }
@@ -25,21 +30,6 @@ body{
     grid-area: hd;
     background-color: darkgreen;
 }
-.navbar{
-    position: relative;
-    background-color: darkkhaki;
-    
-}
-.navbar a{
-    float: right;
-    text-decoration: none;
-    font-size: medium;
-    padding: 10px 10px 0 10px;
-}
-.navbar a:hover{
-    background: #dddddd;
-    color: darkgreen;
-}
 .content{
     grid-area: main;
     background-color: darksalmon;
@@ -61,40 +51,9 @@ body{
     height: 300px;
     width: 100%;
 }
-.footer{
-    grid-area: ft;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: skyblue;
-    /* padding: 10px; */
-    /* margin: 20px; */
-    text-align: justify;
-}
-.footer-right{
-    background-color: turquoise;
-    /* margin: 20px; */
-    /* padding: 10px; */
-    flex: 50%;
-}
-.footer-left{
-    background-color: teal;
-    /* margin: 20px; */
-    /* padding: 10px; */
-    flex: 50%;
-}
 #subscribe{
     float: left;
     font-size: small;
-}
-.button1{
-    border: none;
-    color: black;
-    padding: 15px 30px;
-    text-align: center;
-    text-decoration: none;
-    font-size: medium;
-    margin: 4px 2px;
-    cursor: pointer;
 }
 h1{
     font-weight: 600;

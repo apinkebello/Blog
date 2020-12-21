@@ -1,0 +1,15 @@
+.navbar{
+    position: relative;
+    background-color: darkkhaki;
+    
+}
+.navbar a{
+    float: right;
+    text-decoration: none;
+    font-size: medium;
+    padding: 10px 10px 0 10px;
+}
+.navbar a:hover{
+    background: #dddddd;
+    color: darkgreen;
+}
